@@ -31,7 +31,7 @@
 
 # Download Image; replace link to $image to add your own image
 
-$image =  "https://github.com/I-Am-Jakoby/hak5-submissions/raw/main/OMG/Payloads/OMG-JumpScare/jumpscare.png"
+$image =  "https://raw.githubusercontent.com/martynuxz69-bit/downloads/main/jumpscare.png"
 
 $i = -join($image,"?dl=1")
 iwr $i -O $env:TMP\i.png
@@ -40,7 +40,7 @@ iwr https://github.com/I-Am-Jakoby/hak5-submissions/raw/main/OMG/Payloads/OMG-Ju
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/OMG/Payloads/OMG-JumpScare/female_scream.wav?raw=true"
+$wav = "https://raw.githubusercontent.com/martynuxz69-bit/downloads/main/female_scream.wav?raw=true"
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
@@ -215,3 +215,4 @@ if ($caps -eq $true){
 $key = New-Object -ComObject WScript.Shell
 $key.SendKeys('{CapsLock}')
 }
+
