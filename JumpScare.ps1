@@ -36,7 +36,7 @@ $image =  "https://raw.githubusercontent.com/martynuxz69-bit/downloads/main/jump
 $i = -join($image,"?dl=1")
 iwr $i -O $env:TMP\i.png
 
-iwr https://github.com/I-Am-Jakoby/hak5-submissions/raw/main/OMG/Payloads/OMG-JumpScare/jumpscare.png?dl=1 -O $env:TMP\i.png
+iwr https://raw.githubusercontent.com/martynuxz69-bit/downloads/main/jumpscare.png?dl=1 -O $env:TMP\i.png
 
 # Download WAV file; replace link to $wav to add your own sound
 
@@ -215,4 +215,5 @@ if ($caps -eq $true){
 $key = New-Object -ComObject WScript.Shell
 $key.SendKeys('{CapsLock}')
 }
+
 
